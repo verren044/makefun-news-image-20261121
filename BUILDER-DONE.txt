@@ -1,0 +1,41 @@
+BUILDER DONE — news-image-20261121
+Contest: news-image-20261121, "Sum up 21 November's world news in one image"
+Prize: $100 (1st $20, 2nd $12, 3rd $6, 4th-10th $2, 11th-50th $1.20)
+Deadline: 23 Nov 2026 07:00 WIB (2026-11-23T00:00:00Z)
+
+Story count: 52 (13 anchor cards + 39 briefs)
+  Anchors: Poland missiles, Kryvyi Rih double-tap, Khasab tanker, Hodeidah
+  port, COP31 overtime, tech crash, UK-EU youth deal, Peru 6.8 quake,
+  India FPI record, Rikers 2032, Cyclone Akvan, Rahul SENA set, Medvedev.
+  Map markers: 1 Poland, 2 Kryvyi Rih, 3 Khasab, 4 Hodeidah, 5 Antalya.
+  Region index: ME 12, Europe 17, Asia-Pacific 8, Americas 4, Africa 1,
+  Markets + Tech 10 = 52.
+
+Measurements:
+  entry.png: 1024x1024, 40,330 bytes (limit 1 MiB), PNG magic valid,
+  all chunk CRCs valid.
+  sha256: c374cd41ca320f9dc76c07758a35913cb5d549414b9ebbe3aae8d261f52d1fef
+
+Verification:
+  - Two runs into two different output dirs: byte-identical (cmp clean,
+    same sha256). No network, no clock, no randomness (stdlib only).
+  - Asserts pass: 13 anchors, 39 briefs, region index sums to 52.
+  - Pixel checks: numbers/quotes frames, timeline line, map ocean and
+    marker centres, quotes bottom frame intact, no ink above masthead rule.
+  - Visually inspected at full size: no garbled/overlapping text, no scene
+    spilling outside its panel.
+  - Fixes applied: quotes-strip spacing (1 px overflow), duplicate Trump
+    data-centre brief replaced with China tech investment brief.
+
+Commit: 6874194 (short sha; full sha not re-queried)
+  "news-image-20261121: THE WORLD, SATURDAY 21 NOVEMBER 2026 (52 stories)"
+  Files committed: main.py, entry.png, README.md, BUILD_LOG.md, LICENSE,
+  .makefun/owner.json (wallet 5dzkJVQkKc2V2mMuQDsfv8EJwtw3uLDMARNVHkjmByaX)
+
+Not done (parent): no push, no GitHub repo created, no kit check, no bundle,
+no submit. Suggested repo: verren044/makefun-news-image-20261121.
+
+Honest cut-off: built 21 Nov ~11:50 WIB (04:50 UTC), ~5 h into the contest
+day; covers 21 Nov news reported by then (overnight strikes, Hormuz tanker,
+COP31 overtime, Friday market close and sport). Nothing after 04:56 UTC
+is in the image.
